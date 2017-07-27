@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>zhongzsp</title>
+  <title>zhoongzsp</title>
   
   
   <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
@@ -29,9 +29,9 @@ var _hmt = _hmt || [];
         </div>
     </section>
     <section class='menu'>
-        <div>zhongzsp</div>
+        <div>zhoongzsp</div>
         
-            <div>This is one !</div>
+            <div>不要为了生存而生活</div>
         
         <ul>
           
@@ -104,8 +104,13 @@ var _hmt = _hmt || [];
 <h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p>1.注册gihub账户<br>2.安装node环境<br>3.安装git</p>
 <h2 id="正式开始"><a href="#正式开始" class="headerlink" title="正式开始"></a>正式开始</h2><h3 id="1-本地安装Hexo"><a href="#1-本地安装Hexo" class="headerlink" title="1.本地安装Hexo"></a>1.本地安装Hexo</h3><p><code>$ npm install hexo-cli -g</code></p>
 <h3 id="2-初始化blog项目文件"><a href="#2-初始化blog项目文件" class="headerlink" title="2.初始化blog项目文件"></a>2.初始化blog项目文件</h3><p><code>$ hexo init blog</code></p>
-<h3 id="3-安装blog依赖"><a href="#3-安装blog依赖" class="headerlink" title="3.安装blog依赖"></a>3.安装blog依赖</h3><p><code>$ cd blog</code><br><code>$ npm install</code><br><code>$ hexo server</code>或<code>$ hexo s</code><br>这个时候访问 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就可以看到搭建的博客了<br>就是样子有点丑</p>
-
+<h3 id="3-安装blog依赖"><a href="#3-安装blog依赖" class="headerlink" title="3.安装blog依赖"></a>3.安装blog依赖</h3><p><code>$ cd blog</code><br><code>$ npm install</code><br><code>$ hexo server</code> 或 <code>$ hexo s</code><br>这个时候访问 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就可以看到搭建的博客了<br>就是样子有点丑。</p>
+<h3 id="4-新建Github仓库"><a href="#4-新建Github仓库" class="headerlink" title="4.新建Github仓库"></a>4.新建Github仓库</h3><p>特别注意：仓库的名称必须是<code>[Github用户名].github.io</code>例如用户名是<code>abc</code>则<code>abc.github.io</code></p>
+<h3 id="5-安装Hexo-Github部署的插件"><a href="#5-安装Hexo-Github部署的插件" class="headerlink" title="5.安装Hexo Github部署的插件"></a>5.安装Hexo Github部署的插件</h3><p><code>npm install hexo-deployer-git --save</code><br>安装完成后，配置<code>blog</code>目录下的<code>_config.yml</code>文件，在<code>_config.yml</code>末尾加上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">     <span class="built_in">type</span>: git</div><div class="line">     repo: https://github.com/[Github用户名]/[Github用户名].github.io.git</div><div class="line">     branch: master</div></pre></td></tr></table></figure></p>
+<p>这样就配置好了</p>
+<h3 id="6-部署blog到Github"><a href="#6-部署blog到Github" class="headerlink" title="6.部署blog到Github"></a>6.部署blog到Github</h3><p>每次部署都要按顺序执行以下三条命令<br><code>$ hexo clean</code><br><code>$ hexo generate</code> 或 <code>$ hexo g</code><br><code>$ hexo deploy</code></p>
+<h3 id="7-完成搭建"><a href="#7-完成搭建" class="headerlink" title="7.完成搭建"></a>7.完成搭建</h3><p>可以访问<code>[Github用户名].github.io</code>网站，看看自己刚搭建的博客试试</p>
+<h3 id="后续美化、写博客、配置等，下次再写。"><a href="#后续美化、写博客、配置等，下次再写。" class="headerlink" title="后续美化、写博客、配置等，下次再写。"></a>后续美化、写博客、配置等，下次再写。</h3>
       
     </div>
 </article>
@@ -117,7 +122,7 @@ var _hmt = _hmt || [];
 
 
             <footer>
-    <div>© 2017 - zhongzsp </div>
+    <div>© 2017 - zhongzsp blog </div>
     <div>
     Powered by Hexo
     </div>
